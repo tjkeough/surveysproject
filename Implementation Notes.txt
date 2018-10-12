@@ -16,8 +16,10 @@ PDF Generation
         A student identifier printed as a QR code or similar representation.
 JS HTML Converter
     https://www.codementor.io/amehjoseph/convert-html-css-content-to-a-sleek-multiple-page-pdf-file-using-jspdf-javascript-library-eyyz74hci
-        github https://github.com/BiggA94/jsPDF
-
+        github 
+            https://github.com/MrRio/jsPDF  (original)
+            https://github.com/BiggA94/jsPDF (from tutorial)
+    
 
  
 https://pypi.org/project/Markdown2PDF/
