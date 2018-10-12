@@ -14,9 +14,14 @@ PDF Generation
         the student name printed as text.
         the project title printed as text.
         A student identifier printed as a QR code or similar representation.
+JS HTML Converter
+    https://www.codementor.io/amehjoseph/convert-html-css-content-to-a-sleek-multiple-page-pdf-file-using-jspdf-javascript-library-eyyz74hci
+        github https://github.com/BiggA94/jsPDF
+
+
  
 https://pypi.org/project/Markdown2PDF/
-            
+           
 
 
 QR Code Tools:
