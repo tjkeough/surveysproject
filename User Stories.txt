@@ -1,0 +1,79 @@
+
+Roles
+    maker
+    taker
+    admin
+
+Priorities
+    high [essential]
+    medium [important]
+    low [nice to have]
+
+All users: 
+
+As a maker/admin, I want to be able to sign in or be able to create an account for authentication.
+
+As a maker/admin, I want to be able to sign out.
+
+Admin:
+
+[low] As an admin, I want to select which users can create surveys.
+
+[low] As an admin, I want to delete a maker, so that user cannot create surveys.
+
+[high] As an admin, I want to change login info, so the site can be secure.
+
+[low] As an admin, I want to create different types of survey template.
+
+[low] As an admin, I want to be able to view the results of all surveys in one place.
+
+
+
+Maker: (defined by admin)
+
+[medium] As a maker, I want to be able to create surveys dynamically from a web page and determine the types of questions. (Use of radio buttons, checkboxes, text boxes, etc)
+
+[high] As a maker, I want to be able to create surveys dynamically from a text file with a custom format.
+
+[medium] As a maker, I want to define survey question answer types, so I can change labels for radio buttons, require textboxes and checkboxes, etc.
+
+[high] As a maker, I want to use a default answer type of "radio button", since this is usually the only answer type that I need.
+
+[high] As a maker, I want to print paper copies of the survey that can be read programmatically.
+
+[high] As a maker, I want to process a pdf containing scans of the paper copies, so the results can be entered into a spreadsheet and/or database.
+
+[high] As a maker, I want to specify who can take the online survey. 
+
+[high] As a maker, I want users selected for my survey notified by email (containing a URL) that they should take my survey.
+
+[high] As a maker, I want to generate (more or less) unique URLs, so only authorized takers can submit results.
+
+[low] As a maker, I want to be able to request which users can create surveys on my behalf. (Useful for TAs, need admin approval) 
+
+[medium] As a maker, I want to be able to view the results of my surveys on the webpage.
+
+[high] As a maker, I want to make team evaluation surveys that present each member of the team with a list of their teammates, and criteria to rate them on.
+
+[high] As a maker, I want to define teams using a text file with member names and emails so I can generate a team evaluation survey.
+
+[high] As a maker, I want to process team evaluation surveys so I can access the survey data reorganized by student "ratee".
+
+[high] As a maker, I want to export data to csv format, so I can use it with a spreadsheet.
+
+[medium] As a maker, I want to upload printed survey results to the server, so I can use it together with online survey results.
+
+
+
+Taker: (all other users)
+
+[high] As a taker, I want to fill out a survey from a web page, and submit the results.
+
+[medium] As a taker, I want to be notified of surveys that I need to take.
+
+[low] As a taker, I want to be told when I have already filled out a survey.
+
+
+
+
+

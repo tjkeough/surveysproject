@@ -1,0 +1,56 @@
+Pending Implementation Questions
+    Is there a way to convert HTML to PDF?
+        Needs to support inclusion of QR code.
+    Is there a QR code reader that can be told roughly where to look for the QR?
+    What tool will we use to convert PDF to image data for printed surveys?
+    
+
+
+
+
+
+PDF Generation
+    Each printed form has: 
+        the student name printed as text.
+        the project title printed as text.
+        A student identifier printed as a QR code or similar representation.
+ 
+https://pypi.org/project/Markdown2PDF/
+            
+
+
+QR Code Tools:
+
+    https://github.com/davidshimjs/qrcodejs
+    https://www.codeproject.com/Articles/99362/Scan-and-Read-the-Barcode-from-PDF-File
+    https://www.geeksforgeeks.org/reading-generating-qr-codes-python-using-qrtools/
+    https://kazuhikoarase.github.io/qrcode-generator/js/demo/
+
+PDF Parsing
+    https://github.com/spatie/pdf-to-image
+    pdfminer toolkit (dumppdf.py) can extract images from pdf.
+    
+    metadata file (xml or json)
+        One or more
+            Response Type Description
+                Response Area shape
+                number of choices
+                for each choice
+                    choice label
+                    choice box
+    
+        included for each question:
+            Question number
+            Response Type -- can be used to infer the shape of the AABB 
+                for the response area, the labels of each choice, and the 
+                spacing between each "choice AABB"
+            Upper left corner Point for Response Area AABB
+            
+                
+        
+    python tool:
+        for each response box in a question response area:
+            compute a darkness value by examining the pixels in the response box.
+        The darkest box is assumed to be the chosen response.
+        
+         
