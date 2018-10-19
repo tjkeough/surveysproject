@@ -1,0 +1,17 @@
+survey metadata notes
+
+QRAname
+    choice box #: x,y offset
+    choice box #: x,y offset
+    choice box #: x,y offset
+    choice box #: x,y offset
+{"qraname":"likert", "choicecount":4, "cb1":"x,y", "cb2":"x,y" }
+
+
+
+
+
+
+Question #  
+location of QRA on page
+QRA name
