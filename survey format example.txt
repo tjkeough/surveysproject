@@ -1,0 +1,15 @@
+{"qraname":"likert", "choicecount":4, "labeltext1":"SD", "labeltext2":"D" }
+
+
+
+Question text on one line. Multiple sentences are fine. The LF(10) character terminates the question. (maybe handle CRLF, 0x1310)
+
+likert
+
+Question text for next question.
+
+likert
+
+
+ 
+
