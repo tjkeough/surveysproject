@@ -1,0 +1,9 @@
+{
+  "firebase": "csci487surveysproject",
+  "public": ".",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
