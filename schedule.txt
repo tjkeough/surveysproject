@@ -1,13 +1,38 @@
 Schedule
 
+Sprint 1 (November 2)
+[high] As a maker, I want to be able to create surveys dynamically from a text file with a custom format.
+
+[high] As a maker, I want to use a default answer type of "radio button", since this is usually the only answer type that I need. (Default question response area might be 4 buttons with labels {"SD","D,"A","SA"}) (Another useful canned QRA is {"1","2","3","4","5"})
+
+[high] As a taker, I want to fill out a survey from a web page, and submit the results.
+
+[medium] As a maker, I want to define survey question answer types, so I can change labels for radio buttons, require textboxes and checkboxes, etc.
+
+********************
+
+
+Sprint 2 (November 16)
+
+[high] As a maker, I want to process a pdf containing scans of the paper copies, so the results can be entered into a spreadsheet and/or database. 
+
+[high] As a maker, I want to export data to csv format, so I can use it with a spreadsheet.
+
+[high] As a maker, I want to print paper copies of the survey that can be read programmatically.
+
+[medium] As a maker, I want to upload printed survey results to the server, so I can use it together with online survey results.
 
 
 
-Tasks
-
-Dynamically create online surveys.
 
 
+Sprint 3 (November 30)
 
-Create paper surveys from the surveys page.
+[high] As a maker, I want to make team evaluation surveys that present each member of the team with a list of their teammates, and criteria to rate them on.
+
+[high] As a maker, I want to define teams using a text file with member names and emails so I can generate a team evaluation survey.
+
+
+
+
 
