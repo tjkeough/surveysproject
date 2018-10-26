@@ -11,5 +11,3 @@ Question text for next question.
 likert
 
 
- 
-

@@ -14,6 +14,12 @@ Sprint 1 (November 2)
 
 Sprint 2 (November 16)
 
+[high] As a maker, I want to specify who can take the online survey. 
+
+[high] As a maker, I want users selected for my survey notified by email (containing a URL) that they should take my survey.
+
+[high] As a maker, I want to generate (more or less) unique URLs, so only authorized takers can submit results.
+
 [high] As a maker, I want to process a pdf containing scans of the paper copies, so the results can be entered into a spreadsheet and/or database. 
 
 [high] As a maker, I want to export data to csv format, so I can use it with a spreadsheet.
@@ -31,6 +37,13 @@ Sprint 3 (November 30)
 [high] As a maker, I want to make team evaluation surveys that present each member of the team with a list of their teammates, and criteria to rate them on.
 
 [high] As a maker, I want to define teams using a text file with member names and emails so I can generate a team evaluation survey.
+
+[high] As a maker, I want to process team evaluation surveys so I can access the survey data reorganized by student "ratee".
+
+
+
+
+
 
 
 
