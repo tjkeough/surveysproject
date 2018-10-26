@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Department of Computer and Information Science</title>
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Please rate the student with regard to the statements listed below by selecting the word or phrase which you think best represents the student's performance.</h3>
+      <h3>Abbreviations of the words or phrases have the following meanings: </h3>
+      <h4>SD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Strongly Disagree</h4>
+      <h4>D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Disagree</h4>
+      <h4>A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agree</h4>
+      <h4>SA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Strongly Agree</h4>
+      <form id="questions" class="form-horizontal">
+        <div class="form-group">
+          <label for="question01">The student presented a professional appearance.</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question01" id="question011" value="SD" checked>
+              SD
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question01" id="question012" value="D" checked="checked">
+              D
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question01" id="question013" value="A" checked="checked">
+              A
+            </label>
+          </div>
+          <div class="radio disabled">
+            <label>
+              <input type="radio" name="question01" id="question014" value="SA">
+              SA
+            </label>
+          </div>
+          <label for="question02">The student presented a professional bearing.</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question02" id="question021" value="SD" checked>
+              SD
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question02" id="question022" value="D" checked="checked">
+              D
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question02" id="question023" value="A" checked="checked">
+              A
+            </label>
+          </div>
+          <div class="radio disabled">
+            <label>
+              <input type="radio" name="question02" id="question024" value="SA">
+              SA
+            </label>
+            </div>
+            <label for="question03">The student organized a logical and effective presentation.</label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="question03" id="question031" value="SD" checked>
+                SD
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="question03" id="question032" value="D" checked="checked">
+                D
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="question03" id="question033" value="A" checked="checked">
+                A
+              </label>
+            </div>
+            <div class="radio disabled">
+              <label>
+                <input type="radio" name="question03" id="question034" value="SA">
+                SA
+              </label>
+              </div>
+              <label for="question04">The student used audiovisual aids appropriately.</label>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="question04" id="question041" value="SD" checked>
+                  SD
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="question04" id="question042" value="D" checked="checked">
+                  D
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="question04" id="question043" value="A" checked="checked">
+                  A
+                </label>
+              </div>
+              <div class="radio disabled">
+                <label>
+                  <input type="radio" name="question04" id="question044" value="SA">
+                  SA
+                </label>
+              </div>
+                <label for="question05">The student spoke clearly and audibly.</label>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="question05" id="question051" value="SD" checked>
+                  SD
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="question05" id="question052" value="D" checked="checked">
+                  D
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="question05" id="question053" value="A" checked="checked">
+                  A
+                </label>
+              </div>
+              <div class="radio disabled">
+                <label>
+                  <input type="radio" name="question05" id="question054" value="SA">
+                  SA
+                </label>
+                </div>
+                <label for="question06">The student used correct grammar and pronunciation.</label>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="question06" id="question061" value="SD" checked>
+                  SD
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="question06" id="question062" value="D" checked="checked">
+                  D
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="question06" id="question063" value="A" checked="checked">
+                  A
+                </label>
+              </div>
+              <div class="radio disabled">
+                <label>
+                  <input type="radio" name="question06" id="question064" value="SA">
+                  SA
+                </label>
+                </div>
+                <label for="question07">The student used appropriate computing concepts.</label>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="question07" id="question071" value="SD" checked>
+                  SD
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="question07" id="question072" value="D" checked="checked">
+                  D
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="question07" id="question073" value="A" checked="checked">
+                  A
+                </label>
+              </div>
+              <div class="radio disabled">
+                <label>
+                  <input type="radio" name="question07" id="question074" value="SA">
+                  SA
+                </label>
+              </div>
+                <label for="question08">The student used appropriate computing terminology.</label>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="question08" id="question081" value="SD" checked>
+                  SD
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="question08" id="question082" value="D" checked="checked">
+                  D
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="question08" id="question083" value="A" checked="checked">
+                  A
+                </label>
+              </div>
+              <div class="radio disabled">
+                <label>
+                  <input type="radio" name="question08" id="question084" value="SA">
+                  SA
+                </label>
+              </div>
+                <label for="question09">The student explained the topic effectively.</label>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="question09" id="question091" value="SD" checked>
+                  SD
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="question09" id="question092" value="D" checked="checked">
+                  D
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="question09" id="question093" value="A" checked="checked">
+                  A
+                </label>
+              </div>
+              <div class="radio disabled">
+                <label>
+                  <input type="radio" name="question09" id="question094" value="SA">
+                  SA
+                </label>
+              </div>
+                <label for="question10">The student provided helpful responses to questions.</label>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="question10" id="question101" value="SD" checked>
+                  SD
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="question10" id="question102" value="D" checked="checked">
+                  D
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="question10" id="question103" value="A" checked="checked">
+                  A
+                </label>
+              </div>
+              <div class="radio disabled">
+                <label>
+                  <input type="radio" name="question10" id="question104" value="SA">
+                  SA
+                </label>
+              </div>
+                <label for="question11">The solution provided by the student satisfactorily addresses
+                  the areas of complexity, as chosen on the previous page, on a
+                  level that would be expected of a new computer scientist entering
+                  industry or graduate school.</label>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="question11" id="question111" value="SD" checked>
+                  SD
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="question11" id="question112" value="D" checked="checked">
+                  D
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="question11" id="question113" value="A" checked="checked">
+                  A
+                </label>
+              </div>
+              <div class="radio disabled">
+                <label>
+                  <input type="radio" name="question11" id="question114" value="SA">
+                  SA
+                </label>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+        </div>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

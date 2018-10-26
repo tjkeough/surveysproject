@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Results</title>
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Survey results</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Q1</th>
+            <th>Q2</th>
+            <th>Q3</th>
+            <th>Q4</th>
+            <th>Q5</th>
+            <th>Q6</th>
+            <th>Q7</th>
+            <th>Q8</th>
+            <th>Q9</th>
+            <th>Q10</th>
+            <th>Q11</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          <tr id="template" style="display: none">
+            <td data="question01"></td>
+            <td data="question02"></td>
+            <td data="question03"></td>
+            <td data="question04"></td>
+            <td data="question05"></td>
+            <td data="question06"></td>
+            <td data="question07"></td>
+            <td data="question08"></td>
+            <td data="question09"></td>
+            <td data="question10"></td>
+            <td data="question11"></td>
+          </tr>
+        </tbody>
+      </table>
+      <button type="print" class="btn btn-primary btn-lg">Export as Spreadsheet</button>
+      <button type="export" class="btn btn-primary btn-lg">Print</button>
+    </div>
+    <script src="results.js"></script>
+  </body>
+</html>
