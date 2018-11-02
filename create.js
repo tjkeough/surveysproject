@@ -69,14 +69,5 @@ $('#formdown').keyup(function(){
 
   document.getElementById("generate").innerHTML =  `${x}`;
   $('#output').html(x);
-  var test = $('#output').html(x);
   $('#code').text(x);
-  var codetest =  $('#code').text(x);
-
-  console.log(test);
-
-  console.log( $('#code').text(x));
-
-  var json=$(codetest).serialize();
-  console.log("json:" +json);
 });
