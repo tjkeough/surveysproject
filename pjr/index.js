@@ -1,49 +1,56 @@
 // content of index.js
 const http = require('http')
 const port = 3000
-var person ={"name":"Harry", "age":32, "birthplace":"Hammersmith"};
+//var person ={"name":"Harry", "age":32, "birthplace":"Hammersmith"};
 
-var people = { }
+var people = {	"person1":
+					{"name":"Harry", "age":27, "birthplace":"Hammersmith"},
+				"person2":
+					{"name":"Hermione", "age":32, "birthplace":"Newcastle-upon-Tyne"},
+				"person3":
+					{"name":"Ron", "age":26, "birthplace":"Slough"}
+
+			 }
 
 
-function myTag(strings, personExp, ageExp) {
-  var str0 = strings[0]; // "That "
-  var str1 = strings[1]; // " is a "
+// make a template string that uses each person in people
+function templateMaker(people) {
 
-  // There is technically a string after
-  // the final expression (in our example),
-  // but it is empty (""), so disregard.
-  // var str2 = strings[2];
+	var template = "<!DOCTYPE html>\
+	<html>\
+	<body>";
+	
+	for(person in people){
+  		template += `<h1>\$\{${person}.name\} comes from \$\{${person}.birthplace\}</h1><p>and is \$\{${person}.age\} years old.</p>`;
+	}
 
-  var ageStr;
-  if (ageExp > 99){
-    ageStr = 'centenarian';
-  } else {
-    ageStr = 'youngster';
-  }
+	template += "</body>\
+	</html>";
 
-  // We can even return a string built using a template literal
-  return `${str0}${personExp}${str1}${ageStr}`;
+  return template;
 }
 
 
-
+// Will this work for more deeply nested json?
+String.prototype.interpolate = function(params) {
+  const names = Object.keys(params);
+  const vals = Object.values(params);
+  return new Function(...names, `return \`${this}\`;`)(...vals);
+}
 
 
 
 const requestHandler = (request, response) => {
   console.log(request.url)
-//  response.end(`${person.name} comes from ${person.birthplace}, and is ${person.age} `)
 
-response.end(`<!DOCTYPE html>
-<html>
-<body>
-
-<h1>${person.name} comes from ${person.birthplace}</h1>
-<p>and is ${person.age} years old.</p>
-
-</body>
-</html>`)
+	var template =  templateMaker(people);
+	
+	response.end(
+		template.interpolate(
+			people		
+		)
+	)
+	
 }
 
 const server = http.createServer(requestHandler)
@@ -56,3 +63,4 @@ server.listen(port, (err) => {
 
   console.log(`server is listening on at http://localhost:${port} `)
 })
+
